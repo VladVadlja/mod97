@@ -9,4 +9,17 @@ class ValidateMod28 < Sinatra::Base
 		erb :index
 	end
 
+	get "/validate" do
+		erb :form
+	end
+
+	post "/validate" do
+		erb :form
+	end
+
+	private
+
+	def validate(iban, digits)
+		true
+	end
 end
