@@ -14,7 +14,8 @@ class ValidateMod28 < Sinatra::Base
 	end
 
 	post "/validate" do
-		erb :form
+		@result = "#{params[:iban]} #{params[:digits]}"
+		erb :result, :locals => {:result => @result }
 	end
 
 	private
