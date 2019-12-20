@@ -1,1 +1,1 @@
-# Validates IBAN with mod28
+# Validates reference with mod97
