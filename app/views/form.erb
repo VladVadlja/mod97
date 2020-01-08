@@ -1,5 +1,5 @@
-<h2>Calculate check digits for reference:</h2>
-<form method="POST" action="/validate">	
-	<p>Calculate check digit: <input type="text" name="ref" size="35"></p>
-	<input type="submit" value="Submit">
+<h2><%= action %> check digits for reference:</h2>
+  <form method="POST" action="/<%= action.downcase %>">	
+  <p><%= action %> check digit: <input type="text" name="ref" size="35"></p>
+  <input type="submit" value="<%= action %>"></input>
 </form>

@@ -1,6 +1,23 @@
-<p>
-	For reference: <%= reference %>
-	<br />
-	Check digit: <b><%= result %></b>
-</p>
-<a href="/validate">return</a>
+<% if validating %>
+  <p>
+  For reference: <%= "#{reference[0..1]}" %><b><%= "#{reference[2..3]}" %></b><%= "#{reference[4..-1]}" %>
+    <br />
+    calculated check digit is: <%= checkdig %>
+    <br />
+    <% if result %>
+      <div class="alert alert-success" role="alert">
+        VALID!
+      </div>
+    <% else %>
+      <div class="alert alert-danger" role="alert">
+        INVALID!
+      </div>
+    <% end %>
+  </p>
+<% else %>
+  <p>
+    For reference: <%= reference %>
+    <br />
+    Check digit: <b><%= result %></b>
+  </p>
+<% end %>
