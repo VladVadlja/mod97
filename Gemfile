@@ -11,8 +11,11 @@ gem 'rubocop', '1.45.1'
 gem 'sinatra', '2.2.3'
 
 group :test do
-  gem 'pry', '0.14.2'
-  gem 'pry-byebug', '3.10.1'
   gem 'rack-test', '2.0.2'
   gem 'rspec', '3.12.0'
+end
+
+group :development do
+  gem 'pry', '0.14.2'
+  gem 'pry-byebug', '3.10.1'
 end
