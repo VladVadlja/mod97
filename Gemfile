@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 ruby '2.6.8'
 
 gem 'json'
+gem 'rake'
 gem 'require_all'
 gem 'rubocop'
 gem 'sinatra', '~> 2.2.3', require: 'sinatra/base'
