@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '3.0.3'
+
+ruby '2.6.8'
 
 gem 'json'
 gem 'require_all'
