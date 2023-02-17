@@ -6,7 +6,7 @@ ruby '3.0.3'
 gem 'json'
 gem 'require_all'
 gem 'rubocop'
-gem 'sinatra', require: 'sinatra/base'
+gem 'sinatra', '~> 2.2.3', require: 'sinatra/base'
 
 group :test do
   gem 'pry'
