@@ -1,13 +1,16 @@
-source 'https://rubygems.org'
-ruby '2.6.3'
+# frozen_string_literal: true
 
-gem 'require_all'
+source 'https://rubygems.org'
+ruby '3.0.3'
+
 gem 'json'
-gem 'sinatra', :require => 'sinatra/base'
+gem 'require_all'
+gem 'rubocop'
+gem 'sinatra', require: 'sinatra/base'
 
 group :test do
-  gem 'rack-test'
-  gem 'rspec'
   gem 'pry'
   gem 'pry-byebug'
+  gem 'rack-test'
+  gem 'rspec'
 end
