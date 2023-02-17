@@ -2,8 +2,8 @@
 
 ENV['RACK_ENV'] = 'test'
 
+require 'rack'
 require './config/environment'
-
 require File.expand_path 'app/controllers/validate_mod97.rb'
 
 RSpec.configure do |config|
