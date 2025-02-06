@@ -10,7 +10,7 @@ gem 'rake', '13.0.6'
 gem 'require_all', '3.0.0'
 gem 'rspec', '3.12.0'
 gem 'rubocop', '1.45.1'
-gem 'sinatra', '2.2.3'
+gem 'sinatra', '4.1.0'
 
 group :development, :test do
   gem 'pry', '0.14.2'
